@@ -14,19 +14,3 @@ This project is a hands-on collection of shell scripting examples that demonstra
 - Real-world scripting use cases
 
 Shell scripts are widely used to automate tasks in Linux environments, making them essential for DevOps and system administration. 
-
----
-
-## 📂 Project Structure
-
-> Each script demonstrates a specific concept in shell scripting.
-
----
-
-## 🚀 Getting Started
-
-### 1️⃣ Clone the repository
-
-```bash
-git clone https://github.com/Shankar-codes/Shell-Script.git
-cd Shell-Script
