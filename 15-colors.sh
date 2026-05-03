@@ -27,7 +27,7 @@ if [ $? -ne 0 ]; then
 	dnf install mysql -y
 	VALIDATE $? "mysql"
 else
-	echo -e "$MMysql already installed"
+	echo -e "$M Mysql already installed"
 fi
 
 dnf list installed nginx
@@ -35,7 +35,7 @@ if [ $? -ne 0 ]; then
 	dnf install nginx -y
 	VALIDATE $? "nginx"
 else
-	echo -e "$Bnginx already installed"
+	echo -e "$B nginx already installed"
 fi
 
 dnf list installed python3
