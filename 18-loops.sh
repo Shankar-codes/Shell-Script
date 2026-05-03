@@ -14,7 +14,7 @@ mkdir -p $LOGS_FOLDER
 echo "Script started executed at :: $(date)" | tee -a $LOGS_FILE
 
 if [ $USERNAME -ne 0 ]; then
-	echo "Please login to ROOT user"
+	echo "Please login to ROOT user" | tee -a $LOGS_FILE
 	exit 1
 fi
 
