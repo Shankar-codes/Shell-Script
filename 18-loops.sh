@@ -2,6 +2,7 @@
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
+B="\e[34m"
 N="\e[0m"
 
 USERNAME=$(id -u)
@@ -33,6 +34,6 @@ do
 		dnf install $package -y &>>LOGS_FILE
 		VALIDATE $? "$package"
 	else
-		echo -e "$B $package already installed... $Y SKIPPING ... $N"
+		echo -e "$B $package already installed... $Y SKIPPING ... $N" | tee -a $LOGS_FILE
 	fi
 done
